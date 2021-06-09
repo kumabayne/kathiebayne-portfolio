@@ -7,15 +7,11 @@ const galleryData = require('../public/data/gallery.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Gallery Page', path: req.path, galleryItems: galleryItems });
+  res.render('index', { title: 'Kathie Bayne', path: req.path, galleryItems: galleryItems });
 });
 
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About', path: req.path, galleryItems: galleryItems });
-});
-
-router.get('/resume', function(req, res, next) {
-  res.render('index', { title: 'Résumé', path: req.path });
 });
 
 router.get('/:category', function(req, res, next) {

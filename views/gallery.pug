@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  main.container
+    h1=title
+    ul.image-gallery
+      each image in images
+        li.image-gallery-item
+          img(src=`/images/${directory}/${image}`)

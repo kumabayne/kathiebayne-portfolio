@@ -1,0 +1,118 @@
+{
+  "gallery": [
+    {
+    "hand-lettering": [
+      "marvel-captain-america.jpg",
+      "star-wars-chewie.jpg",
+      "hank-williams.jpg",
+      "lettering-collage-1.jpg",
+      "napoleon-dynamite.jpg",
+      "lettering-collage-2.jpg",
+      "marvel-wandavision.jpg",
+      "labyrinth.jpg",
+      "willy-wonka.jpg",
+      "autumn.jpg"
+    ],
+    "title": "Hand Lettering"
+    }, {
+      "21st-century-fox": [
+        "21st-century-fox-slide-1.jpg",
+        "21st-century-fox-slide-2.jpg"
+      ],
+      "title": "21st Century Fox"
+    }, {
+      "beer-co": [
+        "beer-co-slide-1.jpg",
+        "beer-co-slide-2.jpg",
+        "beer-co-slide-3.jpg",
+        "beer-co-slide-4.jpg",
+        "beer-co-slide-5.jpg",
+        "beer-co-slide-6.jpg",
+        "beer-co-slide-7.jpg",
+        "beer-co-slide-8.jpg"
+      ],
+      "title": "Beer Co"
+    }, {
+      "infographics": [
+        "competition.jpg",
+        "visitor-dynamics.jpg",
+        "blogging.jpg"
+      ],
+      "title": "Infographics"
+    }, {
+      "Gaming Company": [
+        "game-budget.jpg"
+      ]
+    }, {
+      "disney": [
+        "disney-slide-1.jpg",
+        "disney-slide-2.jpg",
+        "disney-slide-3.jpg"
+      ],
+      "title": "Disney"
+    }, {
+      "sports": [
+        "dalvin-cook.jpg",
+        "deshaun-watson-russell-wilson.jpg",
+        "michigan-big-ten-champs.jpg"
+      ],
+      "title": "Sports"
+    }, {
+      "costco-auto-program": [
+        "2020-subaru-crosstrek.jpg",
+        "2020-chevrolet-tahoe.jpg",
+        "2020-honda-odyssey.jpg",
+        "audi-contest.jpg"
+      ],
+      "title": "Costco Auto Program"
+    }, {
+      "book-covers": [
+        "catcher-in-the-rye.jpg"
+      ],
+      "title": "Book Covers"
+    }, {
+      "music-posters": [
+        "charity-concert.jpg"
+      ],
+      "title": "Music Posters"
+    }, {
+      "church": [
+        "summer-stories.jpg",
+        "christmas-eve.jpg",
+        "easter.jpg",
+        "womens-retreat.jpg",
+        "church-picnic.jpg",
+        "chili-cook-off.jpg",
+        "christmas-under-the-stars.jpg"
+      ],
+      "title": "Church"
+    }, {
+      "pass-the-honey": [
+        "pass-the-honey-ig.jpg",
+        "pass-the-honey-fb.jpg",
+        "pass-the-honey-email.jpg"
+      ],
+      "title": "Pass the Honey"
+    }, {
+      "prep-app": [
+        "prep-slide-1.jpg",
+        "prep-slide-2.jpg",
+        "prep-slide-3.jpg",
+        "prep-slide-4.jpg",
+        "prep-slide-5.jpg",
+        "prep-slide-6.jpg",
+        "prep-slide-7.jpg"
+      ],
+      "title": "Prep App"
+    }, {
+      "gaming": [
+        "gaming-slide-1.jpg",
+        "gaming-slide-2.jpg",
+        "gaming-slide-3.jpg",
+        "gaming-slide-4.jpg",
+        "gaming-slide-5.jpg"
+      ],
+      "title": "Gaming"
+    }
+  ]
+}

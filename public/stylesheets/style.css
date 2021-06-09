@@ -1,0 +1,388 @@
+/* Setup Border Box */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* General */
+body {
+  background-color: #f7f7f7;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orelega One', Georgia, Times, serif;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: #faa6a8;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Utilities */
+.img-fluid {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Layout */
+.container {
+  margin: 0 auto;
+  max-width: 1920px;
+  padding: 0 2rem;
+}
+
+.container-small {
+  margin: 0 auto;
+  max-width: 1170px;
+  padding: 0 2rem;
+}
+
+.gallery {
+  columns: 1 auto;
+}
+
+@media screen and (min-width: 506px) {
+  .gallery {
+    columns: 2 auto;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 977px) {
+  .gallery {
+    columns: 3 auto;
+  }
+}
+
+/* Header */
+.header {
+  display: flex;
+  grid-column: 1 / -1;
+}
+
+/* Navigation */
+nav {
+  margin: 0 auto;
+  max-width: 1106px;
+  width: 100%;
+}
+
+.nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.nav-item-home {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.nav-item-social {
+  order: 2;
+}
+
+.nav-link {
+  color: #222;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-link-home {
+  display: inline-block;
+}
+
+.nav-text {
+  display: none;
+}
+
+.nav-text-social {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background-color: #faa6a8;
+  color: #fff;
+  margin-top: 2rem;
+  padding: .5rem 0;
+  text-align: center;
+}
+
+/* Gallery */
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 2rem;
+  page-break-inside: avoid;
+}
+
+.gallery-item-link {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery-item-link:hover:after {
+  align-items: center;
+  color: #fff;
+  content: attr(data-category);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+}
+
+.image-gallery {
+  list-style-type: none;
+  padding: 0;
+}
+
+.image-gallery-item {
+  margin-bottom: 2rem;
+}
+
+/* Hand Lettering */
+[data-color='f5717c']:hover:after {
+  background-color: #f5717c;
+}
+/* 21st Century Fox */
+[data-color='192368']:hover:after {
+  background-color: #192368;
+}
+/* Sports */
+[data-color='4f2682']:hover:after {
+  background-color: #4f2682;
+}
+/* Disney */
+[data-color='e65540']:hover:after {
+  background-color: #e65540;
+}
+/* Costco Auto */
+[data-color='ee7117']:hover:after {
+  background-color: #ee7117;
+}
+/* Beer Co */
+[data-color='f99324']:hover:after {
+  background-color: #f99324;
+}
+/* Infographics */
+[data-color='1db295']:hover:after {
+  background-color: #1db295;
+}
+/* Gaming */
+[data-color='f15e32']:hover:after {
+  background-color: #f15e32;
+}
+/* Book Covers */
+[data-color='03343b']:hover:after {
+  background-color: #03343b;
+}
+/* Church Flyers */
+[data-color='fdb834']:hover:after {
+  background-color: #fdb834;
+}
+/* Music Posters */
+[data-color='f18e39']:hover:after {
+  background-color: #f18e39;
+}
+/* Pass the Honey */
+[data-color='fcb642']:hover:after {
+  background-color: #fcb642;
+}
+/* Gaming */
+[data-color='f15e31']:hover:after {
+  background-color: #f15e31;
+}
+/* Prep */
+[data-color='59eb72']:hover:after {
+  background-color: #59eb72;
+}
+
+.modal-overlay {
+  display: none;
+  background-color: rgba(0, 0, 0, .8);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1010;
+}
+
+.modal {
+  background-color: ghostwhite;
+  bottom: 0;
+  display: none;
+  height: 100%;
+  opacity: 0;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  padding: 1.5rem;
+  position: absolute;
+  right: 0;
+  transition: opacity .3s ease-in-out;
+  top: 0;
+  width: 100%;
+  z-index: 1011;
+}
+
+.modal-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.modal-title {
+  color: #363636;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.close-btn {
+  color: #AFAFAF;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: #222;
+}
+
+.gallery-img {
+  margin-bottom: 24px;
+}
+
+/* About */
+.about {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: auto;
+}
+
+.about-title {
+  color: #363636;
+  font-size: 2rem;
+  margin: 0 0 2rem;
+  position: relative;
+}
+
+.about-title:after {
+  border-bottom: 2px solid #faa6a8;
+  bottom: -1rem;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 3rem;
+}
+
+.about-photo {
+  display: block;
+  margin: 0 auto;
+}
+
+.about-bio {
+  order: -1;
+}
+
+.about-bio p {
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Media Queries */
+@media screen and (min-width: 480px) {
+  .nav-item-home {
+    margin-bottom: 0;
+    display: inline-block;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .far.nav-icon {
+    display: none;
+  }
+  .nav-text {
+    display: inline;
+  }
+  .nav-link.active:after,
+  .nav-link:after {
+    border-bottom: 2px solid #faa6a8;
+    bottom: -4px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transition: all .2s ease-in-out;
+    width: 0;
+  }
+  .nav-link.active:after, .nav-link:hover:after {
+    width: 50%;
+  }
+  .nav-link-home:after {
+    border: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-item-home {
+    order: 1;
+  }
+  .fab.nav-icon-social {
+    display: none;
+  }
+  .nav-text-social {
+    display: inline;
+  }
+  .modal {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .modal {
+    width: 50%;
+  }
+
+  .about {
+    grid-gap: 4rem;
+    grid-template-columns: 480px auto;
+  }
+
+  .about-bio {
+    order: 1;
+  }
+}

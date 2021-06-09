@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  main.container
+    article.gallery
+      each galleryItem in galleryItems  
+        div.gallery-item
+          a(
+            href=galleryItem.endPoint
+            class='gallery-item-link'
+            data-category=galleryItem.category
+            data-color=galleryItem.color
+          )
+            img(
+              class='img-fluid'
+              src=galleryItem.imgSrc
+            )
+  div.modal-overlay
+  aside.modal
+    div.modal-header
+      h1.modal-title= title
+      a(
+        href='#'
+        class='close-btn'
+      )
+        i(class='fas fa-times')
+    div.modal-body
+  
+  script(src='javascripts/home.js')

@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    meta(
+      name='viewport'
+      content='width=device-width, initial-scale=1'
+    )
+    title= title
+    link(rel='preconnect', href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Orelega+One&display=swap', rel='stylesheet')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='https://kit.fontawesome.com/03a8e9a9d6.js')
+    link(rel='apple-touch-icon' sizes='180x180' href='/apple-touch-icon.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='/favicon-16x16.png')
+  body
+    div.container
+      header.header
+        nav
+          ul.nav
+            li.nav-item.nav-item-home 
+              a.nav-link.nav-link-home(href='/') 
+                img.logo(
+                  src='/images/kathiebayne.png'
+                  srcset='/images/kathiebayne.png 1x, /images/kathiebayne@2x.png 2x'
+                  alt='Kathie Bayne Logo'
+                  width=237
+                  height=80
+                )
+            li.nav-item 
+              a.nav-link(href="/about")
+                i.nav-icon.far.fa-user-circle
+                span.nav-text About
+            li.nav-item
+              a.nav-link(href='/pdfs/kathiebayne_resume.pdf' target='_blank')
+                i.nav-icon.far.fa-file
+                span.nav-text Résumé
+            li.nav-item.nav-item-social 
+              a.nav-link.nav-link-social(href="https://www.instagram.com/kathiebayne/" target='_blank') 
+                i.nav-icon-social.fab.fa-instagram
+                span.nav-text-social Instagram
+            li.nav-item.nav-item-social 
+              a.nav-link.nav-link-social(href="https://dribbble.com/kathiebayne" target='_blank') 
+                i.nav-icon-social.fab.fa-dribbble
+                span.nav-text-social Dribbble
+
+    block content
+
+    footer
+      div.container
+        p
+          small=`Copyright © ${new Date().getFullYear()} Kathie Bayne`
+
+    script(src='/javascripts/script.js')

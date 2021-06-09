@@ -19,31 +19,37 @@ gallery.addEventListener('click', (e) => {
   e.stopPropagation();
   e.preventDefault();
   
-  fetch('/data/gallery.json')
-    .then(response => response.json())
-    .then(data => {
-      data.gallery.map(galleryObj => {
-        if (galleryObj[targetCategory]) {
-          modalTitle.innerText = galleryObj.title;
-          galleryObj[targetCategory].map(image => {
-            const img = document.createElement('img');
-            const categoryDir = targetCategory.toLowerCase().replaceAll(' ', '-')
-            img.src = `/images/${categoryDir}/${image}`;
-            img.className = 'gallery-img img-fluid';
-            modalBody.appendChild(img);
-          });
-        }
-      });
+  try {
+    fetch("/data/gallery.json")
+      .then((response) => response.json())
+      .then((data) => {
+        data.gallery.map((galleryObj) => {
+          if (galleryObj[targetCategory]) {
+            modalTitle.innerText = galleryObj.title;
+            galleryObj[targetCategory].map((image) => {
+              const img = document.createElement("img");
+              const categoryDir = targetCategory
+                .toLowerCase()
+                .replaceAll(" ", "-");
+              img.src = `/images/${categoryDir}/${image}`;
+              img.className = "gallery-img img-fluid";
+              modalBody.appendChild(img);
+            });
+          }
+        });
 
-      modalOverlay.style.display = 'block';
-      modal.style.display = 'block';
-      modal.style.opacity = 1;
-      modal.style.top = `${scrollTop}px`;
-      modal.style.transition = 'opacity .3s ease-in-out';
-    });
+        modalOverlay.style.display = "block";
+        modal.style.display = "block";
+        modal.style.opacity = 1;
+        modal.style.top = `${scrollTop}px`;
+        modal.style.transition = "opacity .3s ease-in-out";
+      });  
+  } catch (error) {
+    return false;
+  }
     
-    document.body.style.position = 'fixed';
-    document.body.style.top = `-${scrollTop}px`;
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${scrollTop}px`;
 
   return false;
 });

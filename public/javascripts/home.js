@@ -55,6 +55,8 @@ gallery.addEventListener('click', (e) => {
 });
 
 function closeModal(e) {
+  e.preventDefault();
+  
   if (e.target !== this) return;
   
   window.history.pushState('', '', '/');
